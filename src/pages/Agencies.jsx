@@ -63,7 +63,35 @@ const Agencies = () => {
           </div>
         </div>
       </div>
-      <div className="section2 h-screen"></div>
+      <div className="section2 h-screen font-[font1]">
+        <div className='flex px-[10vw] justify-between text-[1.5vw] mt-50'>
+          <div className='w-[30vw]' >
+            Expertise
+          </div>
+          <div className="w-[30vw]" >
+            <p>Stratergy</p>
+            <p>Advertising</p>
+            <p>Branding</p>
+            <p>Design</p>
+            <p>Content</p>
+          </div>
+          <div className='w-[30vw]' >
+
+          </div>
+        </div>
+        <div className='flex px-[10vw] justify-between text-[1.5vw] mt-36 gap-2 '>
+          <div className='w-[30vw]' >
+            Our projects are born in humility, grow in curiosity and live thanks to creativity in all its forms.
+          </div>
+          <div className="w-[30vw]" >
+            Our creative process thrives in an environment where talent is encouraged to explode. Where we feel free to be the best version of ourselves.
+          </div>
+          <div className='w-[30vw]' >
+            Our culture is openness to others. Period. The entire crew participates in building an agency we are proud of.
+          </div>
+        </div>
+
+      </div>
     </div>
   )
 }
