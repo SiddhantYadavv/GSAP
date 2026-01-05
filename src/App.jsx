@@ -13,7 +13,7 @@ const App = () => {
 
   return (
     <div>
-      <Navbar setIsFullscreenNav={setIsFullscreenNav} />
+      <Navbar isFullscreenNav={isFullscreenNav} setIsFullscreenNav={setIsFullscreenNav} />
       {isFullscreenNav && <FullscreenNav setIsFullscreenNav={setIsFullscreenNav} />}
       <Routes>
         <Route path="/" element={<Home />} />

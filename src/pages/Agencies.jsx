@@ -43,7 +43,7 @@ const Agencies = () => {
   })
 
   return (
-    <div>
+    <div className='absolute top-0'>
       <div className='section1'>
         <div ref={imageDivRef} className='h-[20vw] w-[15vw] absolute top-[10vh] left-[32vw] rounded-2xl overflow-hidden -z-10' >
           <img
