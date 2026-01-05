@@ -11,3 +11,24 @@
 body {
   overflow-x: hidden;
 }
+.moveLink{
+  opacity: 0;
+}
+.link:hover .moveLink{
+  opacity:1;
+}
+.movingDiv{
+  animation-name: movingDivAnimation;
+  animation-duration:12s;
+  animation-iteration-count:infinite;
+  animation-timing-function:linear;
+}
+
+@keyframes movingDivAnimation {
+ from{
+  transform:translateX(0)
+ } 
+ to{
+  transform:translateX(-50%)
+ }
+}
