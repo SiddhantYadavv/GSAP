@@ -43,7 +43,7 @@ const Agencies = () => {
   })
 
   return (
-    <div className='absolute top-0'>
+    <div className=''>
       <div className='section1'>
         <div ref={imageDivRef} className='h-[20vw] w-[15vw] absolute top-[10vh] left-[32vw] rounded-2xl overflow-hidden -z-10' >
           <img
@@ -52,7 +52,7 @@ const Agencies = () => {
           />
         </div>
         <div className='font-[font2] relative'>
-          <div className='mt-[50vh]'>
+          <div className='pt-[50vh]'>
             <h1 className=' text-center font-bold font-[font2] text-[18vw] leading-[15vw] uppercase'>Sixty- <br />seventh<br />
               Twelve</h1>
             <div className='flex justify-end px-3'>
