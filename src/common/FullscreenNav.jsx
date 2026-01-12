@@ -1,9 +1,41 @@
-import React, { useState } from "react"
+import React, { useState, useRef } from "react"
+import gsap from "gsap"
+import { useGSAP } from "@gsap/react"
 
 const FullscreenNav = ({ setIsFullscreenNav }) => {
   const [stroke, setStroke] = useState("#ffffff")
+  const navRef = useRef(null)
+  const mainDivRef = useRef(null)
+
+  useGSAP(() => {
+    gsap.from(".stair", {
+      y: "-100%",
+      duration: 0.5,
+      stagger: {
+        amount: -0.3
+      }
+    })
+    gsap.to(navRef.current, {
+      display: "none",
+      delay: 0.3
+    })
+    gsap.to(mainDivRef.current, {
+      backgroundColor: "black",
+      delay: 0.4
+    })
+  })
+
   return (
-    <div className="h-screen w-full bg-black z-50 fixed">
+    <div ref={mainDivRef} className="h-screen w-full bg-transparent z-50 fixed">
+
+      <div ref={navRef} className="h-full w-full flex">
+        <div className="stair h-full w-1/5 bg-black" ></div>
+        <div className="stair h-full w-1/5 bg-black" ></div>
+        <div className="stair h-full w-1/5 bg-black" ></div>
+        <div className="stair h-full w-1/5 bg-black" ></div>
+        <div className="stair h-full w-1/5 bg-black" ></div>
+      </div>
+
       <div id="fsnDiv" className="flex flex-row justify-between absolute top-0 w-full">
         <div className="pt-3 pl-3">
           <svg xmlns="http://www.w3.org/2000/svg" width="103" height="44" viewBox="0 0 103 44">
